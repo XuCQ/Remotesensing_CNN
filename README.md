@@ -1,5 +1,5 @@
 # Remotesensing_CNN
-Data form LandSet8
+Data form LandSat8
 ## 基于卷积神经网络的遥感图像识别
 
 - 数据源：LandSet 8 数据，目标源为常州市新北区，时间 2014-03，波段数量 7
