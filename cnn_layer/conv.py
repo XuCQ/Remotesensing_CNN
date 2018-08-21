@@ -34,7 +34,8 @@ class ConvLayer(object):
 
         # weight decay, L2正则化 lambda*||w||2
         if self.weight_decay:
-            weight_decay = tf.multiply(tf.nn.l2_loss(self.weight), self.weight_decay)  # tf.nn.l2_loss :1/2Σw²
+            weight_decay = tf.multiply(tf.nn.l2_loss(self.weight), self.weight_decay)
+            # tf.nn.l2_loss :1/2Σw²;weight_decay is lambda
             tf.add_to_collection('losses', weight_decay)
 
         # bias_variable
